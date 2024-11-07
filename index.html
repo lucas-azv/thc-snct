@@ -3,59 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da Página</title>
+    <title>Semana de Tecnologia da Informação (V STI)</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS externo -->
 </head>
 <body>
     <!-- Cabeçalho -->
     <header>
-        <h1>Título Principal do Site</h1>
+        <img src="./img/Logotipo_IFET.svg" alt="">
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#conteudo">Conteúdo</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#programacao">Programação</a></li>
+                <li><a href="#palestras">Palestras</a></li>
+                <li><a href="#minicursos">Minicursos</a></li>
             </ul>
         </nav>
     </header>
+    <div id="banner">
+    <h1>
+        V Semana da Tecnologia da Informação
+    </h1>
+    </div>
 
     <!-- Seção de Apresentação/Sobre -->
     <section id="sobre">
-        <h2>Sobre</h2>
-        <p>Descrição geral e breve sobre o tema do site.</p>
+        <div>
+        <h2>Sobre o Evento</h2>
+        <p>A Semana de Tecnologia da Informação (Semana da TI) faz parte da Semana Nacional de Ciência e Tecnologia (SNCT) e será realizada no IFTM campus Uberlândia Centro.</p>
+        <p>O evento reúne estudantes, acadêmicos e profissionais do mercado de tecnologia, com o objetivo de promover a troca de conhecimentos através de palestras, TED Talks e minicursos.</p>
+    </div>
     </section>
 
-    <!-- Conteúdo Principal -->
-    <main id="conteudo">
-        <h2>Conteúdo Principal</h2>
-        
-        <!-- Sub-seções de conteúdo -->
-        <section>
-            <h3>Subtítulo 1</h3>
-            <p>Texto ou informações detalhadas sobre este tópico.</p>
-        </section>
-        
-        <section>
-            <h3>Subtítulo 2</h3>
-            <p>Mais informações detalhadas aqui.</p>
-        </section>
-    </main>
+    <!-- Programação do Evento -->
+    <section id="programacao">
+        <div>
+        <h2>Programação do Evento</h2>
 
-    <!-- Galeria ou Seção de Imagens -->
-    <section id="galeria">
-        <h2>Galeria</h2>
-        <div class="imagem">
-            <img src="imagem1.jpg" alt="Descrição da imagem">
-            <p>Legenda ou descrição da imagem</p>
+        <div>
+            <h3>Primeiro dia (18/10/2023)</h3>
+            <p>No primeiro dia do evento, será realizado um encontro entre profissionais da área de TI, abordando temas atuais e relacionados à computação, no formato de TED Talk.</p>
+            <p><b>Horário: </b>19:00 - 22:00</p>
+            <p><b>Local: </b>Auditório do IFTM Campus Uberlândia Centro</p>
         </div>
-        <!-- Repetir divs de imagem conforme necessário -->
+
+        <div>
+            <h3>Segundo dia (19/10/2023)</h3>
+            <p>No segundo dia, serão disponibilizados quatro minicursos, limitados aos alunos inscritos no evento.</p>
+            <p><b>Horário: </b>19:00 - 22:00</p>
+            <p><b>Local: </b>Laboratórios de Informática do IFTM</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Seção de Palestras -->
+    <section id="palestras">
+        <div>
+        <h2>Palestras</h2>
+        <p>Confira os temas abordados nas palestras e conheça seus palestrantes:</p>
+
+        <div class="palestra">
+            <div class="palestra-info">
+                <h3>Palestra 1: Uso de Cloud Computing na Jornada de Sustentabilidade das Empresas</h3>
+                <p><b>Palestrante: </b>Hélio Rubens Soares (Líder de Arquitetura de Soluções na AWS)</p>
+                <p><b>Resumo: </b>A computação em nuvem tem um papel fundamental na jornada de melhorar e medir as métricas de sustentabilidade de TI. Como dar o primeiro passo? Como a AWS está ajudando empresas globalmente a se tornarem mais sustentáveis?</p>
+            </div>
+            <div class="palestra-foto">
+                <img src="./img/palestrante_1.png" alt="Hélio Rubens Soares" />
+            </div>
+        </div>
+
+        <div class="palestra">
+            <div class="palestra-info">
+                <h3>Palestra 2: Seja o Dono da Sua Carreira</h3>
+                <p><b>Palestrante: </b>Helton Valentini (Sócio-diretor na Ene Soluções)</p>
+                <p><b>Resumo: </b>Helton Valentini compartilhará um framework para avaliar e direcionar sua carreira, independentemente de seu estágio profissional.</p>
+            </div>
+            <div class="palestra-foto">
+                <img src="./img/palestrante_2.png" alt="Helton Valentini" />
+            </div>
+        </div>
+
+        <div class="palestra">
+            <div class="palestra-info">
+                <h3>Palestra 3: A Lei Geral de Proteção de Dados (LGPD) na Internet</h3>
+                <p><b>Palestrante: </b>Almir Garcia Fernandes (Professor de Direito na UFU)</p>
+                <p><b>Resumo: </b>Almir Fernandes explicará a aplicação da LGPD no contexto da Internet e como ela impacta a privacidade e segurança dos dados online.</p>
+            </div>
+            <div class="palestra-foto">
+                <img src="./img/palestrante_3.png" alt="Almir Garcia Fernandes" />
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Seção de Minicursos -->
+    <section id="minicursos">
+        <div>
+        <h2>Minicursos</h2>
+        <p>Mais informações detalhadas sobre os minicursos estarão disponíveis em breve. Fique atento à inscrição e às vagas limitadas!</p>
+    </div>
     </section>
 
     <!-- Rodapé -->
     <footer>
         <h2>Contato</h2>
-        <p>Informações de contato e links para redes sociais, se aplicável.</p>
+        <p>Para mais informações, entre em contato com a organização do evento.</p>
         <p>&copy; 2024 - Todos os direitos reservados</p>
     </footer>
+
 </body>
 </html>
