@@ -39,7 +39,7 @@ li a:visited{
 }
 li a:hover{
     background-color: white;
-    color:rgb(53, 118, 53)
+    color:rgb(53, 118, 53);
 }
 #banner {
     position: relative;
@@ -51,8 +51,10 @@ li a:hover{
     background-position-y: 54%;
     color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 24px;
 }
 #banner h1{
     font-size: 64px;
@@ -60,10 +62,33 @@ li a:hover{
     width: 70%;
     text-align: left;
 }
+.btn{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: rgb(53, 118, 53);
+    padding: 16px;
+    border-radius: 18px;
+    transition: all 0.2s ease-in-out;
+}
+.btn:hover{
+    background-color: rgb(83, 157, 83);
+}
+.btn:visited{
+    color: white;
+}
+.btn p{
+    font-size: 20px;
+    text-decoration: none;
+}
 
 h2{
+    width: 50%;
+    margin: auto;
     text-align: center;
     font-size: 32px;
+    padding: 14px;
+    border-bottom: 3px solid rgb(53, 118, 53);
 }
 h3{
     font-size: 22px;
@@ -88,22 +113,105 @@ section:nth-child(even){
     text-align: center;
     font-size: 18px;
 }
-.palestra{
+
+/* Cards de Palestras */
+.palestra {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    gap: 24px;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 22px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    transition: all 0.3s ease-in-out;
 }
+
+.palestra:hover {
+    background-color: rgb(234, 252, 234);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
 .palestra-info{
     width: 70%;
     display: flex;
     flex-direction: column;
+    padding: 24px;
     gap: 18px;
     line-height: 1.5;
     text-align: justify;
 }
+
 .palestra-foto{
     width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .palestra-foto img{
-    width: 240px;
+    width: 184px;
+    height: 184px;
+    border-radius: 50%;
+    border: 6px solid rgb(53, 118, 53);
+}
+
+/* Cards de Minicursos */
+#minicursos > div > p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.minicurso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+    margin-bottom: 24px;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 22px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.minicurso:hover {
+    background-color: rgb(234, 252, 234);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.minicurso-info {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 18px;
+    line-height: 1;
+    text-align: justify;
+}
+
+.minicurso-foto {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minicurso-foto img {
+    width: 184px;
+    height: 184px;
+    border-radius: 50%;
+    border: 6px solid rgb(53, 118, 53);
+}
+footer{
+    padding: 14px;
+}
+footer p{
+    text-align: center;
+    font-size: 14px;
 }
